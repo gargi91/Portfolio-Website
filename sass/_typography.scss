@@ -1,0 +1,70 @@
+.heading-1 {
+  font-size: 4.2rem;
+  color: $color-grey-dark-3;
+  font-family: $font-display;
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 2.4rem;
+  color: $color-grey-dark-1;
+  font-family: $font-display;
+  font-weight: 600;
+}
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: $color-grey-light-2;
+  font-weight: 500;
+}
+
+.heading-3-dark {
+  font-size: 1.6rem;
+  color: $color-grey-dark-3;
+  font-family: $font-display;
+  font-weight: 600;
+}
+
+.para {
+  font-size: 1.6rem;
+  color: $color-grey-dark-2;
+}
+
+.para-md {
+  font-size: 1.4rem;
+  color: $color-grey-dark-3;
+}
+
+.para-md-light {
+  font-size: 1.4rem;
+  color: $color-grey-dark-2;
+}
+
+.para-sm {
+  font-size: 1.2rem;
+  font-family: $font-display;
+  font-weight: 500;
+  color: $color-grey-dark-1;
+}
+
+.no_bmargin {
+  margin-bottom: 0;
+}
+
+.mb-esm {
+  margin-bottom: 0.5rem;
+}
+
+.mb-sm {
+  margin-bottom: 1.5rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}

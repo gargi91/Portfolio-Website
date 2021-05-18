@@ -1,0 +1,56 @@
+//COLOR VARIABLES
+
+$color-primary: #fff;
+
+$color-grey-light-1: #f2f2f2;
+$color-grey-light-2: #c4c4c4;
+
+$color-grey-dark-1: #4f4f4f;
+$color-grey-dark-2: #828282;
+$color-grey-dark-3: #333333;
+
+//FONT VARIABLES
+
+$font-primary: "Open Sans", sans-serif;
+$font-display: "Montserrat", sans-serif;
+
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  background-color: $color-grey-light-1;
+  color: $color-grey-dark-1;
+  line-height: 1.6;
+  padding: 7rem 19.7rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(9, min-content);
+  grid-template-columns: 2.5fr 4.5fr;
+  grid-gap: 30px;
+
+  & > * {
+    background-color: $color-primary;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.5rem 3rem rgba(#000, 0.05);
+  }
+}
+
+.header {
+  grid-column: 1/-1;
+}

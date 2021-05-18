@@ -1,0 +1,15 @@
+.profiles {
+  grid-row: 6/8;
+
+  &__box {
+    display: flex;
+  }
+
+  &__profile {
+    margin-right: 3rem;
+    &--icon {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
