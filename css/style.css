@@ -192,7 +192,11 @@ a:active {
         .projects__header--filter .filter-btn:hover {
           border: 0.16rem solid #f8aa0b;
           color: #f8aa0b;
-          cursor: pointer; }
+          cursor: pointer;
+          transform: translateY(-2px);
+          box-shadow: 0 0.3rem 1.5rem rgba(0, 0, 0, 0.15); }
+        .projects__header--filter .filter-btn:active {
+          transform: translateY(0); }
       .projects__header--filter .filter-btn:not(:last-of-type) {
         margin-right: 2rem; }
       .projects__header--filter .active-btn {
@@ -289,4 +293,35 @@ a:active {
 .footer {
   grid-row: -2/-1;
   grid-column: 1/-1;
-  background-color: palevioletred; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer .social {
+    display: flex;
+    justify-content: space-around;
+    width: 25%; }
+    .footer .social__item--icon {
+      width: 2.5rem;
+      height: 2.5rem; }
+  .footer .contact-btn {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    border-radius: 1.2rem;
+    padding: 0.3rem 0.8rem;
+    border: 0.16rem solid #f8aa0b;
+    color: #f8aa0b;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s; }
+    .footer .contact-btn:hover, .footer .contact-btn:active {
+      border: 0.16rem solid #f8aa0b;
+      background-color: #f8aa0b;
+      color: #fff; }
+    .footer .contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2); }
+    .footer .contact-btn:active {
+      transform: translateY(0); }
+
+.copyright {
+  font-size: 1.2rem; }

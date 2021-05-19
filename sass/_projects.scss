@@ -33,6 +33,12 @@
           border: 0.16rem solid #f8aa0b;
           color: #f8aa0b;
           cursor: pointer;
+          transform: translateY(-2px);
+          box-shadow: 0 0.3rem 1.5rem rgba(#000, 0.15);
+        }
+
+        &:active {
+          transform: translateY(0);
         }
       }
 
