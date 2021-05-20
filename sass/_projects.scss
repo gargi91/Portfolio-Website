@@ -9,6 +9,11 @@
   grid-template-rows: repeat(2, min-content);
   grid-gap: 3rem;
 
+  @media only screen and (max-width: $bp-small) {
+    grid-row: auto;
+    grid-gap: 1.5rem;
+  }
+
   &__header {
     padding: 3rem;
     background-color: #fff;
@@ -16,6 +21,12 @@
 
     &--filter {
       display: flex;
+
+      @media only screen and (max-width: $bp-small) {
+        height: 8rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
 
       .filter-btn {
         display: block;
@@ -28,6 +39,10 @@
         font-family: inherit;
 
         transition: all 0.2s;
+
+        @media only screen and (max-width: $bp-small) {
+          width: fit-content;
+        }
 
         &:hover {
           border: 0.16rem solid #f8aa0b;
@@ -44,6 +59,10 @@
 
       .filter-btn:not(:last-of-type) {
         margin-right: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+          margin-right: 1rem;
+        }
       }
 
       .active-btn {

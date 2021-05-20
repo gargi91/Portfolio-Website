@@ -5,6 +5,9 @@
 
   display: flex;
   align-items: flex-start;
+  @media only screen and (max-width: $bp-small) {
+    flex-wrap: wrap;
+  }
 
   &__picture {
     display: block;
@@ -12,6 +15,12 @@
     border-radius: 1.2rem;
     margin-right: 3rem;
     flex-shrink: 0;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
 
   &__content {
@@ -22,6 +31,15 @@
       display: flex;
       justify-content: space-between;
       // margin-bottom: 3rem;
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+      }
+
+      .title {
+        @media only screen and (max-width: $bp-medium) {
+          margin-bottom: 2rem;
+        }
+      }
 
       .contact {
         &__item {

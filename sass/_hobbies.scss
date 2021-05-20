@@ -1,5 +1,9 @@
 .hobbies {
   grid-row: 5/8;
+  @media only screen and (max-width: $bp-small) {
+    grid-row: 6/8;
+    grid-column: 1/-1;
+  }
 
   &__hobby {
     &--pic {
